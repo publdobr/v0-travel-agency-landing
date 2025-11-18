@@ -27,8 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className="antialiased">
-        {children}
+      <body className="antialiased bg-[#EEECE8] min-h-screen flex justify-center">
+        {/* Ограничивающий контейнер по центру */}
+        <div className="w-full max-w-4xl bg-[#EEECE8] min-h-screen shadow-xl">
+          {children}
+        </div>
       </body>
     </html>
   );
