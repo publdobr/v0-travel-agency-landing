@@ -100,9 +100,9 @@ export default function Home() {
           <h2 id="why-us-heading" className="mb-12 text-5xl font-bold md:text-6xl lg:text-7xl">
             ПОЧЕМУ МЫ?
           </h2>
-
-          
-          <div className="container mx-auto max-w-4xl p-4 md:p-8">
+      
+          {/* Блок со статистикой, адаптированный под скриншот */}
+          <div className="mx-auto max-w-4xl bg-white">
             
             {/* Основная сетка 2x2 */}
             <div className="grid border-b border-[#B3B3B3] md:grid-cols-2">
@@ -114,7 +114,7 @@ export default function Home() {
                   в экспедиционном<br />и люкс-туризме
                 </p>
               </div>
-        
+      
               {/* 1863 ПУТЕШЕСТВЕННИКА (Верхний правый блок) */}
               <div className="p-6 text-center md:p-10">
                 <p className="mb-2 text-4xl font-bold text-[#353D4A] md:text-5xl">1863 ПУТЕШЕСТВЕННИКА</p>
@@ -128,7 +128,7 @@ export default function Home() {
                 <p className="mb-2 text-4xl font-bold text-[#353D4A] md:text-5xl">70 СТРАН МИРА</p>
                 <p className="text-base leading-snug text-[#353D4A] md:text-lg">мы посетили</p>
               </div>
-        
+      
               {/* >3000 ЭКСКУРСИЙ (Нижний правый блок) */}
               <div className="border-t border-[#B3B3B3] p-6 text-center md:p-10">
                 <p className="mb-2 text-4xl font-bold text-[#353D4A] md:text-5xl">&gt;3000 ЭКСКУРСИЙ</p>
@@ -142,9 +142,9 @@ export default function Home() {
               <p className="mb-2 text-4xl font-normal text-[#808080] md:text-5xl">209 АВТОРСКИХ МАРШРУТОВ</p>
               <p className="text-base leading-snug text-[#808080] md:text-lg">Создали в 6 странах</p>
             </div>
-        
+      
           </div>
-          
+        </div>
       </section>
 
       {/* Who We Are Section */}
