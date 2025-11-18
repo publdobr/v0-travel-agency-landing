@@ -81,13 +81,16 @@ export default function Home() {
             </div>
           </div>
 
-          <button 
+          <a 
+            href="https://t.me/vicky_somewhere"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex w-full items-center justify-between border-b-2 border-[#1A2B45] py-4 text-left text-lg font-medium uppercase tracking-wide transition-colors hover:border-[#1A2B45]/60 md:text-xl"
             aria-label="Оставить заявку на путешествие"
           >
             ОСТАВИТЬ ЗАЯВКУ
             <ArrowRight className="transition-transform group-hover:translate-x-2" />
-          </button>
+          </a>
         </div>
       </header>
 
