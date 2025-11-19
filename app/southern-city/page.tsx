@@ -88,13 +88,17 @@ export default function SouthernCityPage() {
 
           {/* Footer Actions */}
           <div className="space-y-0 border-t border-[#1A2B45]">
-            <Link
-              href="/#contact"
+            {/* Updated link to Telegram */}
+            <a
+              href="https://t.me/vicky_somewhere"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex items-center justify-between py-6 border-b border-[#1A2B45] hover:bg-[#1A2B45] hover:text-white transition-colors px-2"
             >
               <span className="text-xl uppercase tracking-wide">ОСТАВИТЬ ЗАЯВКУ</span>
               <ArrowUpRight className="w-6 h-6 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-            </Link>
+            </a>
+            {/* Updated link to Home */}
             <Link
               href="/"
               className="group flex items-center justify-between py-6 border-b border-[#1A2B45] hover:bg-[#1A2B45] hover:text-white transition-colors px-2"

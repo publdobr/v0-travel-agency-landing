@@ -263,13 +263,17 @@ export default function AboutPage() {
         {/* Footer Navigation */}
         <footer className="border-t border-[#1A2B45]/20 pt-12">
           <div className="grid gap-6">
-            <Link
-              href="/#contact"
+            {/* Updated link to Telegram */}
+            <a
+              href="https://t.me/vicky_somewhere"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex items-center justify-between text-xl md:text-2xl font-medium border-b border-[#1A2B45] pb-4 hover:text-[#2C5282] transition-colors"
             >
               <span>ОСТАВИТЬ ЗАЯВКУ</span>
               <ArrowUpRight className="w-6 h-6 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-            </Link>
+            </a>
+            {/* Updated link to Home */}
             <Link
               href="/"
               className="group flex items-center justify-between text-xl md:text-2xl font-medium border-b border-[#1A2B45]/50 pb-4 text-[#4A5568] hover:text-[#1A2B45] transition-colors"

@@ -82,13 +82,16 @@ export default function Home() {
             </div>
           </div>
 
-          <button 
+          <a 
+            href="https://t.me/vicky_somewhere"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex w-full items-center justify-between border-b-2 border-[#1A2B45] py-4 text-left text-lg font-medium uppercase tracking-wide transition-colors hover:border-[#1A2B45]/60 md:text-xl"
             aria-label="Оставить заявку на путешествие"
           >
             ОСТАВИТЬ ЗАЯВКУ
             <ArrowRight className="transition-transform group-hover:translate-x-2" />
-          </button>
+          </a>
         </div>
         {/* </CHANGE> */}
       </header>
@@ -424,55 +427,55 @@ export default function Home() {
           <nav aria-label="Медиа-контент">
             <ul className="space-y-6">
               <li>
-                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                <a href="https://www.youtube.com/@bogatieTravel" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
                   <span className="text-lg md:text-xl">СМОТРЕТЬ НАШ ЮТУБ-КАНАЛ</span>
                   <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
                 </a>
               </li>
               <li>
-                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                <a href="https://seeyou.mave.digital/ep-25" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
                   <span className="text-lg md:text-xl">ПОДКАСТ «ВАЖНОЕ РЕШЕНИЕ»</span>
                   <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
                 </a>
               </li>
               <li>
-                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                <a href="https://stationnord.mave.digital/ep-48" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
                   <span className="text-lg md:text-xl">«СЕВЕР»</span>
                   <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
                 </a>
               </li>
               <li>
-                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                <a href="https://smogla.mave.digital/ep-3" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
                   <span className="text-lg md:text-xl">ПОДКАСТ «Я СМОГЛА И ТЫ СМОЖЕШЬ»</span>
                   <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
                 </a>
               </li>
               <li>
-                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                <a href="https://www.youtube.com/watch?v=TL26d4MOoCI" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
                   <span className="text-lg md:text-xl">ЗАЧЕМ ЖИТЬ НА КРАЮ СВЕТА?</span>
                   <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
                 </a>
               </li>
               <li>
-                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                <a href="https://t-j.ru/gedonistan/" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
                   <span className="text-lg md:text-xl">Т-Ж ПРО ТУРБЮРО В ДАГЕСТАНЕ</span>
                   <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
                 </a>
               </li>
               <li>
-                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                <a href="https://n-e-n.ru/avtodom/" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
                   <span className="text-lg md:text-xl">ИНТЕРВЬЮ ПРО СЕМЕЙНОЕ ПУТЕШЕСТВИЕ В АВТОДОМЕ ПО АРГЕНТИНЕ</span>
                   <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
                 </a>
               </li>
               <li>
-                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                <a href="https://www.youtube.com/watch?v=u4f0-rpAbFI&t=2871s" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
                   <span className="text-lg md:text-xl">ВЫПУСК «РЕДАКЦИИ» ПРО ДАГЕСТАН</span>
                   <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
                 </a>
               </li>
               <li>
-                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                <a href="https://www.youtube.com/watch?v=igJhxx7cSOY" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
                   <span className="text-lg md:text-xl">ВЫСТУПЛЕНИЕ В СПОРТМАРАФОНЕ</span>
                   <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
                 </a>
@@ -480,7 +483,6 @@ export default function Home() {
             </ul>
           </nav>
         </div>
-        {/* </CHANGE> */}
       </section>
 
       {/* Contact Footer */}
@@ -508,7 +510,9 @@ export default function Home() {
             <ul className="flex flex-wrap gap-6">
               <li>
                 <a 
-                  href="#"
+                  href="https://t.me/vicky_somewhere"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group flex items-center gap-2 text-lg font-medium text-white transition-colors hover:text-white/70"
                   aria-label="Написать в Telegram"
                 >
@@ -518,7 +522,9 @@ export default function Home() {
               </li>
               <li>
                 <a 
-                  href="#"
+                  href="https://www.instagram.com/vicky_somewhere/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group flex items-center gap-2 text-lg font-medium text-white transition-colors hover:text-white/70"
                   aria-label="Написать в Instagram"
                 >
@@ -528,7 +534,9 @@ export default function Home() {
               </li>
               <li>
                 <a 
-                  href="#"
+                  href="https://api.whatsapp.com/send/?phone=5491126441804&text&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group flex items-center gap-2 text-lg font-medium text-white transition-colors hover:text-white/70"
                   aria-label="Написать в WhatsApp"
                 >
@@ -539,7 +547,6 @@ export default function Home() {
             </ul>
           </nav>
         </div>
-        {/* </CHANGE> */}
       </footer>
     </main>
   )
