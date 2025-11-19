@@ -1,7 +1,6 @@
 import { ArrowUpRight, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
-// Предполагаем, что компонент NavigationMenu существует
-// import { NavigationMenu } from '@/components/navigation-menu' 
+// import { NavigationMenu } from '@/components/navigation-menu' // Закомментировано, так как компонент не предоставлен
 
 export default function Home() {
   return (
@@ -98,7 +97,8 @@ export default function Home() {
           </a>
         </div>
       </header>
-<hr/>
+      <hr className="my-16 border-[#1A2B45]/10" />
+
       {/* Why Us Section */}
       <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="why-us-heading" id="why-us">
         <div className="mx-auto max-w-4xl">
@@ -148,7 +148,8 @@ export default function Home() {
         </div>
        
       </section>
-<hr/>
+      <hr className="my-16 border-[#1A2B45]/10" />
+
       {/* Who We Are Section */}
       <section 
         style={{
@@ -198,7 +199,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-<hr/>
+      <hr className="my-16 border-[#1A2B45]/10" />
+
       {/* Target Audience Section */}
       <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="target-audience-heading" id="target-audience">
         <div className="mx-auto max-w-4xl">
@@ -209,7 +211,6 @@ export default function Home() {
           <div className="relative space-y-16">
             {/* Decorative dashed line */}
             <svg className="absolute left-0 top-0 h-full w-full opacity-20" style={{ zIndex: 0 }}>
-              {/* Этот путь, вероятно, является примером, и для правильного отображения декоративной линии может потребоваться доработка */}
               <path d="M 100 50 Q 200 100, 300 150 T 500 250 T 700 350" stroke="#1A2B45" strokeWidth="2" strokeDasharray="10,10" fill="none" />
             </svg>
 
@@ -310,7 +311,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-<hr/>
+      <hr className="my-16 border-[#1A2B45]/10" />
+
       {/* Services Section */}
       <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="services-heading" id="services">
         <div className="mx-auto max-w-4xl">
@@ -430,7 +432,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-<hr/>
+      <hr className="my-16 border-[#1A2B45]/10" />
+
       {/* Media Section */}
       <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="media-heading" id="media">
         <div className="mx-auto max-w-4xl">
@@ -442,26 +445,4 @@ export default function Home() {
             <ul className="space-y-6">
               <li>
                 <a href="https://www.youtube.com/@bogatieTravel" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
-                  <span className="text-lg md:text-xl">СМОТРЕТЬ НАШ ЮТУБ-КАНАЛ</span>
-                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
-                </a>
-              </li>
-              <li>
-                <a href="https://seeyou.mave.digital/ep-25" target="_blank" rel="noopener noreferrer" className="group block border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
-                  <div className="flex items-center justify-between">
-                    <div className="flex-1">
-                      <div className="text-lg md:text-xl mb-2">ПОДКАСТ «ВАЖНОЕ РЕШЕНИЕ»</div>
-                      <p className="text-base text-[#1A2B45]/60">О Патагонии и путешествиях со смыслом через новый опыт</p>
-                    </div>
-                    <ArrowUpRight className="ml-4 flex-shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="https://stationnord.mave.digital/ep-48" target="_blank" rel="noopener noreferrer" className="group block border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
-                  <div className="flex items-center justify-between">
-                    <div className="flex-1">
-                      <div className="text-lg md:text-xl mb-2">«СЕВЕР»</div>
-                      <p className="text-base text-[#1A2B45]/60">Про Шпицберген, арктическую болезнь, нашу с Ваней биполярочку и переезд из Арктики в Антарктику</p>
-                    </div>
-                    <ArrowUpRight className="ml-4 flex-shrink-0 transition-transform group-hover
+                  <span className="text
