@@ -1,15 +1,12 @@
 import { ArrowUpRight, ArrowRight } from 'lucide-react'
-import Link from 'next/link'
-// import { NavigationMenu } from '@/components/navigation-menu' 
 
 export default function Home() {
   return (
     <main className="bg-[#EEECE8] text-[#1A2B45]">
-      {/* <NavigationMenu /> // Раскомментируйте, если компонент NavigationMenu готов */}
-
       {/* Hero Section */}
       <header className="relative min-h-screen px-6 py-12 md:px-12 lg:px-24">
-        <div className="mx-auto max-w-7xl">
+        {/* Удален max-w-7xl */}
+        <div className="mx-auto">
           <p className="mb-8 text-sm uppercase tracking-wider text-[#1A2B45]/60 md:text-base">
             [Гиды и продюсеры путешествий]
           </p>
@@ -99,53 +96,41 @@ export default function Home() {
       </header>
 
       {/* Why Us Section */}
-      <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="why-us-heading" id="why-us">
-        <div className="mx-auto max-w-7xl">
+      <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="why-us-heading">
+        {/* Удален max-w-7xl */}
+        <div className="mx-auto">
           <h2 id="why-us-heading" className="mb-12 text-5xl font-bold md:text-6xl lg:text-7xl">
             ПОЧЕМУ МЫ?
           </h2>
 
-            <div className="grid gap-px bg-[#1A2B45]/20 md:grid-cols-2">
-            {/* 9 ЛЕТ */}
+          <div className="grid gap-px bg-[#1A2B45]/20 md:grid-cols-2">
             <div className="bg-[#EEECE8] p-8 md:p-12">
-                {/* Исправлено: text-4xl -> text-3xl для мобильных */}
-                <p className="mb-4 text-3xl font-bold md:text-5xl">9 ЛЕТ</p>
-                <p className="text-lg leading-relaxed text-[#1A2B45]/80">
-                    В экспедиционном<br />и люкс-туризме
-                </p>
+              <p className="mb-4 text-4xl font-bold md:text-5xl">9 ЛЕТ</p>
+              <p className="text-lg leading-relaxed text-[#1A2B45]/80">
+                В экспедиционном<br />и люкс-туризме
+              </p>
             </div>
-            
-            {/* 1863 ПУТЕШЕСТВЕННИКА */}
             <div className="bg-[#EEECE8] p-8 md:p-12">
-                {/* Исправлено: text-4xl -> text-3xl для мобильных */}
-                <p className="mb-4 text-3xl font-bold md:text-5xl">1863 ПУТЕШЕСТВЕННИКА</p>
-                <p className="text-lg leading-relaxed text-[#1A2B45]/80">
-                    доверили организацию<br />своего отпуска
-                </p>
+              <p className="mb-4 text-4xl font-bold md:text-5xl">1863 ПУТЕШЕСТВЕННИКА</p>
+              <p className="text-lg leading-relaxed text-[#1A2B45]/80">
+                доверили организацию<br />своего отпуска
+              </p>
             </div>
-            
-            {/* 70 СТРАН МИРА */}
             <div className="bg-[#EEECE8] p-8 md:p-12">
-                {/* Исправлено: text-4xl -> text-3xl для мобильных */}
-                <p className="mb-4 text-3xl font-bold md:text-5xl">70 СТРАН МИРА</p>
-                <p className="text-lg leading-relaxed text-[#1A2B45]/80">мы посетили</p>
+              <p className="mb-4 text-4xl font-bold md:text-5xl">70 СТРАН МИРА</p>
+              <p className="text-lg leading-relaxed text-[#1A2B45]/80">мы посетили</p>
             </div>
-            
-            {/* >3000 ЭКСКУРСИЙ */}
             <div className="bg-[#EEECE8] p-8 md:p-12">
-                {/* Исправлено: text-4xl -> text-3xl для мобильных */}
-                <p className="mb-4 text-3xl font-bold md:text-5xl">&gt;3000 ЭКСКУРСИЙ</p>
-                <p className="text-lg leading-relaxed text-[#1A2B45]/80">Лично провели</p>
+              <p className="mb-4 text-4xl font-bold md:text-5xl">&gt;3000 ЭКСКУРСИЙ</p>
+              <p className="text-lg leading-relaxed text-[#1A2B45]/80">Лично провели</p>
             </div>
-        </div>
-        
-        {/* 209 АВТОРСКИХ МАРШРУТОВ (отдельный блок) */}
-        <div className="mt-px bg-[#EEECE8] p-8 md:p-12">
-            {/* Исправлено: text-4xl -> text-3xl для мобильных */}
-            <p className="mb-4 text-3xl font-bold md:text-5xl">209 АВТОРСКИХ МАРШРУТОВ</p>
+          </div>
+
+          <div className="mt-px bg-[#EEECE8] p-8 md:p-12">
+            <p className="mb-4 text-4xl font-bold md:text-5xl">209 АВТОРСКИХ МАРШРУТОВ</p>
             <p className="text-lg leading-relaxed text-[#1A2B45]/80">Создали в 6 странах</p>
+          </div>
         </div>
-       
       </section>
 
       {/* Who We Are Section */}
@@ -157,11 +142,11 @@ export default function Home() {
         }}
         className="relative px-6 py-20 md:px-12 lg:px-24" 
         aria-labelledby="who-we-are-heading"
-        id="who-we-are"
       >
         <div className="absolute inset-0 bg-[#1A2B45]/60"></div>
 
-        <div className="relative mx-auto max-w-7xl">
+        {/* Удален max-w-7xl */}
+        <div className="relative mx-auto">
           <h2 id="who-we-are-heading" className="mb-12 text-5xl font-bold text-white md:text-6xl lg:text-7xl">
             КТО МЫ?
           </h2>
@@ -185,136 +170,79 @@ export default function Home() {
               </p>
             </article>
           </div>
-
-          <div className="mt-16 border-t border-white/20 pt-8">
-            <Link
-              href="/about"
-              className="group inline-flex items-center gap-2 text-base font-medium uppercase tracking-wide text-white transition-colors hover:text-white/70 md:text-lg"
-            >
-              Подробнее о нас и о нашем опыте
-              <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
-            </Link>
-          </div>
         </div>
       </section>
 
       {/* Target Audience Section */}
-      <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="target-audience-heading" id="target-audience">
-        <div className="mx-auto max-w-7xl">
-          <h2 id="target-audience-heading" className="mb-16 text-5xl font-bold md:text-6xl lg:text-7xl">
+      <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="target-audience-heading">
+        {/* Удален max-w-7xl */}
+        <div className="mx-auto">
+          <h2 id="target-audience-heading" className="mb-12 text-5xl font-bold md:text-6xl lg:text-7xl">
             ВАМ К НАМ, ЕСЛИ:
           </h2>
 
-          <div className="relative space-y-16">
-            {/* Decorative dashed line */}
-            <svg className="absolute left-0 top-0 h-full w-full opacity-20" style={{ zIndex: 0 }}>
-              <path d="M 100 50 Q 200 100, 300 150 T 500 250 T 700 350" stroke="#1A2B45" strokeWidth="2" strokeDasharray="10,10" fill="none" />
-            </svg>
-
-            {/* Point 1 */}
-            <div className="relative grid gap-6 md:grid-cols-12 md:gap-8">
-              <div className="md:col-span-6 md:col-start-1">
-                <span className="mb-3 inline-block text-xl font-medium text-[#1A2B45]/60">(1)</span>
-                <p className="text-lg leading-relaxed md:text-xl text-pretty">
+          <ol className="space-y-8">
+            <li className="grid gap-6 md:grid-cols-12 md:gap-12">
+              <div className="md:col-span-7 md:col-start-1">
+                <span className="mb-2 inline-block text-xl font-bold">(1)</span>
+                <p className="text-lg leading-relaxed text-[#1A2B45]/80 md:text-xl text-pretty">
                   Хотите освободиться от бесконечных поисков маршрутов и билетов, доверив детали тем, кто знает регион
                 </p>
               </div>
-              <div className="md:col-span-5 md:col-start-8">
-                {/* Note: This image src is not in the provided file list, assuming it is locally available */}
-                <img 
-                  src="/aerial-view-of-patagonian-mountains-and-glacial-la.jpg"
-                  alt="Вид с воздуха на патагонские горы"
-                  className="h-64 w-full rotate-2 object-cover shadow-lg"
-                />
-              </div>
-            </div>
+            </li>
 
-            {/* Decorative mountain illustration */}
-            <div className="hidden md:block absolute left-[10%] top-[20%] opacity-30" style={{ zIndex: 0 }}>
-              <svg width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 90 L40 30 L60 50 L80 20 L110 90" stroke="#1A2B45" strokeWidth="1.5" />
-                <path d="M45 90 L50 70 L55 75 L60 65 L70 90" stroke="#1A2B45" strokeWidth="1" />
-              </svg>
-            </div>
-
-            {/* Point 2 */}
-            <div className="relative grid gap-6 md:grid-cols-12 md:gap-8">
-              <div className="md:col-span-6 md:col-start-7">
-                <span className="mb-3 inline-block text-xl font-medium text-[#1A2B45]/60">(2)</span>
-                <p className="text-lg leading-relaxed md:text-xl text-pretty">
+            <li className="grid gap-6 md:grid-cols-12 md:gap-12">
+              <div className="md:col-span-7 md:col-start-6">
+                <span className="mb-2 inline-block text-xl font-bold">(2)</span>
+                <p className="text-lg leading-relaxed text-[#1A2B45]/80 md:text-xl text-pretty">
                   Ищете живые, аутентичные впечатления — вне туристических троп, в балансе комфорта и приключений
                 </p>
               </div>
-            </div>
+            </li>
 
-            {/* Point 3 with collage images */}
-            <div className="relative grid gap-6 md:grid-cols-12 md:gap-8">
-              <div className="md:col-span-5 md:col-start-1">
-                {/* Note: This image src is not in the provided file list, assuming it is locally available */}
-                <img 
-                  src="/person-in-inflatable-zodiac-boat-on-patagonian-wat.jpg"
-                  alt="Путешественник в лодке"
-                  className="h-80 w-full -rotate-3 object-cover shadow-lg"
-                />
-              </div>
-              <div className="md:col-span-6 md:col-start-7 flex flex-col justify-center">
-                <span className="mb-3 inline-block text-xl font-medium text-[#1A2B45]/60">(3)</span>
-                <p className="mb-6 text-lg leading-relaxed md:text-xl text-pretty">
+            <li className="grid gap-6 md:grid-cols-12 md:gap-12">
+              <div className="md:col-span-7 md:col-start-1">
+                <span className="mb-2 inline-block text-xl font-bold">(3)</span>
+                <p className="text-lg leading-relaxed text-[#1A2B45]/80 md:text-xl text-pretty">
                   Чувствуете трудности с языком или логистикой региона — перелётами, погранпереходами, маршрутом
                 </p>
-                {/* Note: This image src is not in the provided file list, assuming it is locally available */}
-                <img 
-                  src="/red-zodiac-boat-with-expedition-team-on-patagonian.jpg"
-                  alt="Экспедиционная команда"
-                  className="h-48 w-full rotate-1 object-cover shadow-lg"
-                />
               </div>
-            </div>
+            </li>
 
-            {/* Decorative mountain and tree illustration */}
-            <div className="hidden md:block absolute right-[15%] top-[50%] opacity-30" style={{ zIndex: 0 }}>
-              <svg width="100" height="120" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M30 100 L50 40 L70 100" stroke="#1A2B45" strokeWidth="1.5" />
-                <path d="M50 100 L50 60 M45 70 L50 60 L55 70 M43 80 L50 70 L57 80" stroke="#1A2B45" strokeWidth="1" />
-              </svg>
-            </div>
-
-            {/* Point 4 */}
-            <div className="relative grid gap-6 md:grid-cols-12 md:gap-8">
-              <div className="md:col-span-6 md:col-start-7">
-                <span className="mb-3 inline-block text-xl font-medium text-[#1A2B45]/60">(4)</span>
-                <p className="text-lg leading-relaxed md:text-xl text-pretty">
+            <li className="grid gap-6 md:grid-cols-12 md:gap-12">
+              <div className="md:col-span-7 md:col-start-6">
+                <span className="mb-2 inline-block text-xl font-bold">(4)</span>
+                <p className="text-lg leading-relaxed text-[#1A2B45]/80 md:text-xl text-pretty">
                   Устали от отмен и нестыковок, цените осмысленное путешествие без хаоса и спешки
                 </p>
               </div>
-            </div>
+            </li>
 
-            {/* Point 5 */}
-            <div className="relative grid gap-6 md:grid-cols-12 md:gap-8">
-              <div className="md:col-span-6 md:col-start-1">
-                <span className="mb-3 inline-block text-xl font-medium text-[#1A2B45]/60">(5)</span>
-                <p className="text-lg leading-relaxed md:text-xl text-pretty">
+            <li className="grid gap-6 md:grid-cols-12 md:gap-12">
+              <div className="md:col-span-7 md:col-start-1">
+                <span className="mb-2 inline-block text-xl font-bold">(5)</span>
+                <p className="text-lg leading-relaxed text-[#1A2B45]/80 md:text-xl text-pretty">
                   Любите опыты, где можно быть свободным и расслабленным — зная, что обо всём уже позаботились
                 </p>
               </div>
-            </div>
+            </li>
 
-            {/* Point 6 */}
-            <div className="relative grid gap-6 md:grid-cols-12 md:gap-8">
-              <div className="md:col-span-6 md:col-start-7">
-                <span className="mb-3 inline-block text-xl font-medium text-[#1A2B45]/60">(6)</span>
-                <p className="text-lg leading-relaxed md:text-xl text-pretty">
+            <li className="grid gap-6 md:grid-cols-12 md:gap-12">
+              <div className="md:col-span-7 md:col-start-6">
+                <span className="mb-2 inline-block text-xl font-bold">(6)</span>
+                <p className="text-lg leading-relaxed text-[#1A2B45]/80 md:text-xl text-pretty">
                   Предпочитаете ясность и надёжность вместо затяжной «маньяны» и лишней неопределённости
                 </p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ol>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="services-heading" id="services">
-        <div className="mx-auto max-w-7xl">
+      <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="services-heading">
+        {/* Удален max-w-7xl */}
+        <div className="mx-auto">
           <h2 id="services-heading" className="mb-12 text-5xl font-bold md:text-6xl lg:text-7xl">
             НАШИ УСЛУГИ
           </h2>
@@ -337,10 +265,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Link href="/southern-city" className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
+              <button className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
                 ПОДРОБНЕЕ
                 <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
-              </Link>
+              </button>
             </article>
 
             {/* Service 2 */}
@@ -355,10 +283,10 @@ export default function Home() {
                 <p className="text-sm uppercase tracking-wide text-[#1A2B45]/60">СТОИМОСТЬ:</p>
                 <p className="text-xl font-bold md:text-2xl">ОТ 300 $ / 5 ЧЕЛ</p>
               </div>
-              <Link href="/picnic" className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
+              <button className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
                 ПОДРОБНЕЕ
                 <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
-              </Link>
+              </button>
             </article>
 
             {/* Service 3 */}
@@ -373,10 +301,10 @@ export default function Home() {
                 <p className="text-sm uppercase tracking-wide text-[#1A2B45]/60">СТОИМОСТЬ:</p>
                 <p className="text-xl font-bold md:text-2xl">ОТ 350 $ / ДЕНЬ СОПРОВОЖДЕНИЯ</p>
               </div>
-              <Link href="/individual-tour" className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
+              <button className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
                 ПОДРОБНЕЕ
                 <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
-              </Link>
+              </button>
             </article>
 
             {/* Service 4 */}
@@ -391,10 +319,10 @@ export default function Home() {
                 <p className="text-sm uppercase tracking-wide text-[#1A2B45]/60">СТОИМОСТЬ:</p>
                 <p className="text-xl font-bold md:text-2xl">РАССЧИТЫВАЕТСЯ ИНДИВИДУАЛЬНО</p>
               </div>
-              <Link href="/concierge-service" className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
+              <button className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
                 ПОДРОБНЕЕ
                 <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
-              </Link>
+              </button>
             </article>
 
             {/* Service 5 */}
@@ -409,10 +337,10 @@ export default function Home() {
                 <p className="text-sm uppercase tracking-wide text-[#1A2B45]/60">СТОИМОСТЬ:</p>
                 <p className="text-xl font-bold md:text-2xl">БЕСПЛАТНО</p>
               </div>
-              <Link href="/express-consultation" className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
+              <button className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
                 ПОДРОБНЕЕ
                 <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
-              </Link>
+              </button>
             </article>
 
             {/* Service 6 */}
@@ -423,6 +351,142 @@ export default function Home() {
               <p className="text-lg leading-relaxed text-[#1A2B45]/80 text-pretty">
                 Любите путешествовать сами, но не хотите тратить часы на подготовку. Увидеть главное и не пропустить скрытое.
               </p>
-              <Link href="/guides-for-independent-travel" className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
+              <button className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
                 ПОДРОБНЕЕ
-                <ArrowUpRight
+                <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* Media Section */}
+      <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="media-heading">
+        {/* Удален max-w-7xl */}
+        <div className="mx-auto">
+          <h2 id="media-heading" className="mb-12 text-5xl font-bold md:text-6xl lg:text-7xl">
+            ИНТЕРВЬЮ И ПОДКАСТЫ
+          </h2>
+
+          <nav aria-label="Медиа-контент">
+            <ul className="space-y-6">
+              <li>
+                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <span className="text-lg md:text-xl">СМОТРЕТЬ НАШ ЮТУБ-КАНАЛ</span>
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <span className="text-lg md:text-xl">ПОДКАСТ «ВАЖНОЕ РЕШЕНИЕ»</span>
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <span className="text-lg md:text-xl">«СЕВЕР»</span>
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <span className="text-lg md:text-xl">ПОДКАСТ «Я СМОГЛА И ТЫ СМОЖЕШЬ»</span>
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <span className="text-lg md:text-xl">ЗАЧЕМ ЖИТЬ НА КРАЮ СВЕТА?</span>
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <span className="text-lg md:text-xl">Т-Ж ПРО ТУРБЮРО В ДАГЕСТАНЕ</span>
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <span className="text-lg md:text-xl">ИНТЕРВЬЮ ПРО СЕМЕЙНОЕ ПУТЕШЕСТВИЕ В АВТОДОМЕ ПО АРГЕНТИНЕ</span>
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <span className="text-lg md:text-xl">ВЫПУСК «РЕДАКЦИИ» ПРО ДАГЕСТАН</span>
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="#" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <span className="text-lg md:text-xl">ВЫСТУПЛЕНИЕ В СПОРТМАРАФОНЕ</span>
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      {/* Contact Footer */}
+      <footer 
+        style={{
+          backgroundImage: 'url(/couple-of-travelers-standing-together-in-patagonia.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+        className="relative px-6 py-24 md:px-12 lg:px-24" 
+        aria-labelledby="contact-heading"
+      >
+        <div className="absolute inset-0 bg-[#1A2B45]/60"></div>
+
+        {/* Удален max-w-7xl */}
+        <div className="relative mx-auto">
+          <h2 id="contact-heading" className="mb-12 text-5xl font-bold text-white md:text-6xl lg:text-7xl">
+            НА СВЯЗИ!
+          </h2>
+
+          <p className="mb-12 max-w-2xl text-lg leading-relaxed text-white md:text-xl text-pretty">
+            Напишите нам в любую удобную соц. сеть и мы подберем для вас лучшие условия для путешествия!
+          </p>
+
+          <nav aria-label="Социальные сети">
+            <ul className="flex flex-wrap gap-6">
+              <li>
+                <a 
+                  href="#"
+                  className="group flex items-center gap-2 text-lg font-medium text-white transition-colors hover:text-white/70"
+                  aria-label="Написать в Telegram"
+                >
+                  Telegram
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#"
+                  className="group flex items-center gap-2 text-lg font-medium text-white transition-colors hover:text-white/70"
+                  aria-label="Написать в Instagram"
+                >
+                  Instagram
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#"
+                  className="group flex items-center gap-2 text-lg font-medium text-white transition-colors hover:text-white/70"
+                  aria-label="Написать в WhatsApp"
+                >
+                  WhatsApp
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </main>
+  )
+}
