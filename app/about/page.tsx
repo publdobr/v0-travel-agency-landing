@@ -24,7 +24,7 @@ export default function AboutPage() {
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 py-12 md:py-24 relative z-10 max-w-5xl">
+      <div className="container mx-auto px-4 py-12 md:py-24 relative z-10 max-w-4xl">
         {/* Header */}
         <header className="mb-20 md:mb-32">
           <p className="text-sm md:text-base font-medium mb-4">[Гиды и продюсеры путешествий]</p>
@@ -214,7 +214,7 @@ export default function AboutPage() {
             </div>
             <div className="prose prose-lg text-[#1A2B45] md:ml-auto">
               <p className="mb-4">
-                Половину 2025 года мы провели в экспедиции на автодоме по Южной Америке — проехали от Колумбии до Перу,
+                Половину 2025 года мы провели в экспедициях на автодоме по Южной Америке — проехали от Колумбии до Перу,
                 вместе с нашей 2-летней дочкой.
               </p>
               <p className="font-bold mb-4">Сегодня мы на Острове, который называется Огненная Земля.</p>
