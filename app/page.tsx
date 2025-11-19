@@ -105,29 +105,29 @@ export default function Home() {
 
           <div className="grid gap-px bg-[#1A2B45]/20 md:grid-cols-2">
             <div className="bg-[#EEECE8] p-8 md:p-12">
-              <p className="mb-4 text-4xl font-bold md:text-5xl">9 ЛЕТ</p>
+              <p className="mb-4 text-3xl font-bold md:text-5xl">9 ЛЕТ</p>
               <p className="text-lg leading-relaxed text-[#1A2B45]/80">
                 В экспедиционном<br />и люкс-туризме
               </p>
             </div>
             <div className="bg-[#EEECE8] p-8 md:p-12">
-              <p className="mb-4 text-4xl font-bold md:text-5xl">1863 ПУТЕШЕСТВЕННИКА</p>
+              <p className="mb-4 text-3xl font-bold md:text-5xl">1863 ПУТЕШЕСТВЕННИКА</p>
               <p className="text-lg leading-relaxed text-[#1A2B45]/80">
                 доверили организацию<br />своего отпуска
               </p>
             </div>
             <div className="bg-[#EEECE8] p-8 md:p-12">
-              <p className="mb-4 text-4xl font-bold md:text-5xl">70 СТРАН МИРА</p>
+              <p className="mb-4 text-3xl font-bold md:text-5xl">70 СТРАН МИРА</p>
               <p className="text-lg leading-relaxed text-[#1A2B45]/80">мы посетили</p>
             </div>
             <div className="bg-[#EEECE8] p-8 md:p-12">
-              <p className="mb-4 text-4xl font-bold md:text-5xl">3000+ ЭКСКУРСИЙ</p>
+              <p className="mb-4 text-3xl font-bold md:text-5xl">3000+ ЭКСКУРСИЙ</p>
               <p className="text-lg leading-relaxed text-[#1A2B45]/80">Лично провели</p>
             </div>
           </div>
 
           <div className="mt-px bg-[#EEECE8] p-8 md:p-12">
-            <p className="mb-4 text-4xl font-bold md:text-5xl">209 АВТОРСКИХ МАРШРУТОВ</p>
+            <p className="mb-4 text-3xl font-bold md:text-5xl">209 АВТОРСКИХ МАРШРУТОВ</p>
             <p className="text-lg leading-relaxed text-[#1A2B45]/80">Создали в 6 странах</p>
           </div>
         </div>
