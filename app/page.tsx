@@ -339,10 +339,10 @@ export default function Home() {
                 <p className="text-sm uppercase tracking-wide text-[#1A2B45]/60">СТОИМОСТЬ:</p>
                 <p className="text-xl font-bold md:text-2xl">ОТ 300 $ / 5 ЧЕЛ</p>
               </div>
-              <button className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
+              <Link href="/picnic" className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
                 ПОДРОБНЕЕ
                 <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
-              </button>
+              </Link>
             </article>
 
             {/* Service 3 */}
