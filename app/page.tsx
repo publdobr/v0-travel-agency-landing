@@ -1,9 +1,12 @@
 import { ArrowUpRight, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+import { NavigationMenu } from '@/components/navigation-menu'
 
 export default function Home() {
   return (
     <main className="bg-[#EEECE8] text-[#1A2B45]">
+      <NavigationMenu />
+
       {/* Hero Section */}
       <header className="relative min-h-screen px-6 py-12 md:px-12 lg:px-24">
         <div className="mx-auto max-w-4xl">
@@ -97,7 +100,7 @@ export default function Home() {
       </header>
 
       {/* Why Us Section */}
-      <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="why-us-heading">
+      <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="why-us-heading" id="why-us">
         <div className="mx-auto max-w-4xl">
           <h2 id="why-us-heading" className="mb-12 text-5xl font-bold md:text-6xl lg:text-7xl">
             ПОЧЕМУ МЫ?
@@ -143,6 +146,7 @@ export default function Home() {
         }}
         className="relative px-6 py-20 md:px-12 lg:px-24" 
         aria-labelledby="who-we-are-heading"
+        id="who-we-are"
       >
         <div className="absolute inset-0 bg-[#1A2B45]/60"></div>
 
@@ -185,7 +189,7 @@ export default function Home() {
       </section>
 
       {/* Target Audience Section */}
-      <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="target-audience-heading">
+      <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="target-audience-heading" id="target-audience">
         <div className="mx-auto max-w-4xl">
           <h2 id="target-audience-heading" className="mb-16 text-5xl font-bold md:text-6xl lg:text-7xl">
             ВАМ К НАМ, ЕСЛИ:
@@ -297,7 +301,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="services-heading">
+      <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="services-heading" id="services">
         <div className="mx-auto max-w-4xl">
           <h2 id="services-heading" className="mb-12 text-5xl font-bold md:text-6xl lg:text-7xl">
             НАШИ УСЛУГИ
@@ -357,7 +361,7 @@ export default function Home() {
                 <p className="text-sm uppercase tracking-wide text-[#1A2B45]/60">СТОИМОСТЬ:</p>
                 <p className="text-xl font-bold md:text-2xl">ОТ 350 $ / ДЕНЬ СОПРОВОЖДЕНИЯ</p>
               </div>
-              <Link href="/private-tour" className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
+              <Link href="/individual-tour" className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
                 ПОДРОБНЕЕ
                 <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
               </Link>
@@ -375,10 +379,10 @@ export default function Home() {
                 <p className="text-sm uppercase tracking-wide text-[#1A2B45]/60">СТОИМОСТЬ:</p>
                 <p className="text-xl font-bold md:text-2xl">РАССЧИТЫВАЕТСЯ ИНДИВИДУАЛЬНО</p>
               </div>
-              <button className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
+              <Link href="/concierge-service" className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
                 ПОДРОБНЕЕ
                 <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
-              </button>
+              </Link>
             </article>
 
             {/* Service 5 */}
@@ -393,10 +397,10 @@ export default function Home() {
                 <p className="text-sm uppercase tracking-wide text-[#1A2B45]/60">СТОИМОСТЬ:</p>
                 <p className="text-xl font-bold md:text-2xl">БЕСПЛАТНО</p>
               </div>
-              <button className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
+              <Link href="/express-consultation" className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
                 ПОДРОБНЕЕ
                 <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
-              </button>
+              </Link>
             </article>
 
             {/* Service 6 */}
@@ -407,10 +411,10 @@ export default function Home() {
               <p className="text-lg leading-relaxed text-[#1A2B45]/80 text-pretty">
                 Любите путешествовать сами, но не хотите тратить часы на подготовку. Увидеть главное и не пропустить скрытое.
               </p>
-              <button className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
+              <Link href="/guides-for-independent-travel" className="group flex items-center gap-2 text-base font-medium uppercase tracking-wide transition-colors hover:text-[#1A2B45]/60">
                 ПОДРОБНЕЕ
                 <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
-              </button>
+              </Link>
             </article>
           </div>
         </div>
@@ -418,7 +422,7 @@ export default function Home() {
       </section>
 
       {/* Media Section */}
-      <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="media-heading">
+      <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="media-heading" id="media">
         <div className="mx-auto max-w-4xl">
           <h2 id="media-heading" className="mb-12 text-5xl font-bold md:text-6xl lg:text-7xl">
             ИНТЕРВЬЮ И ПОДКАСТЫ
@@ -433,27 +437,47 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a href="https://seeyou.mave.digital/ep-25" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
-                  <span className="text-lg md:text-xl">ПОДКАСТ «ВАЖНОЕ РЕШЕНИЕ»</span>
-                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                <a href="https://seeyou.mave.digital/ep-25" target="_blank" rel="noopener noreferrer" className="group block border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <div className="flex items-center justify-between">
+                    <div className="flex-1">
+                      <div className="text-lg md:text-xl mb-2">ПОДКАСТ «ВАЖНОЕ РЕШЕНИЕ»</div>
+                      <p className="text-base text-[#1A2B45]/60">О Патагонии и путешествиях со смыслом через новый опыт</p>
+                    </div>
+                    <ArrowUpRight className="ml-4 flex-shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                  </div>
                 </a>
               </li>
               <li>
-                <a href="https://stationnord.mave.digital/ep-48" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
-                  <span className="text-lg md:text-xl">«СЕВЕР»</span>
-                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                <a href="https://stationnord.mave.digital/ep-48" target="_blank" rel="noopener noreferrer" className="group block border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <div className="flex items-center justify-between">
+                    <div className="flex-1">
+                      <div className="text-lg md:text-xl mb-2">«СЕВЕР»</div>
+                      <p className="text-base text-[#1A2B45]/60">Про Шпицберген, арктическую болезнь, нашу с Ваней биполярочку и переезд из Арктики в Антарктику</p>
+                    </div>
+                    <ArrowUpRight className="ml-4 flex-shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                  </div>
                 </a>
               </li>
               <li>
-                <a href="https://smogla.mave.digital/ep-3" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
-                  <span className="text-lg md:text-xl">ПОДКАСТ «Я СМОГЛА И ТЫ СМОЖЕШЬ»</span>
-                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                <a href="https://smogla.mave.digital/ep-3" target="_blank" rel="noopener noreferrer" className="group block border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <div className="flex items-center justify-between">
+                    <div className="flex-1">
+                      <div className="text-lg md:text-xl mb-2">ПОДКАСТ «Я СМОГЛА И ТЫ СМОЖЕШЬ»</div>
+                      <p className="text-base text-[#1A2B45]/60">Каково женщине вести бизнес на Кавказе, жизнь в Арктике, экспедицию в Антарктиду, и почему я больше не хочу путешествовать</p>
+                    </div>
+                    <ArrowUpRight className="ml-4 flex-shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                  </div>
                 </a>
               </li>
               <li>
-                <a href="https://www.youtube.com/watch?v=TL26d4MOoCI" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
-                  <span className="text-lg md:text-xl">ЗАЧЕМ ЖИТЬ НА КРАЮ СВЕТА?</span>
-                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                <a href="https://www.youtube.com/watch?v=TL26d4MOoCI" target="_blank" rel="noopener noreferrer" className="group block border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <div className="flex items-center justify-between">
+                    <div className="flex-1">
+                      <div className="text-lg md:text-xl mb-2">ЗАЧЕМ ЖИТЬ НА КРАЮ СВЕТА?</div>
+                      <p className="text-base text-[#1A2B45]/60">Интервью Scandinavia Club про Арктику</p>
+                    </div>
+                    <ArrowUpRight className="ml-4 flex-shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                  </div>
                 </a>
               </li>
               <li>
@@ -494,6 +518,7 @@ export default function Home() {
         }}
         className="relative px-6 py-24 md:px-12 lg:px-24" 
         aria-labelledby="contact-heading"
+        id="contact"
       >
         <div className="absolute inset-0 bg-[#1A2B45]/60"></div>
 

@@ -273,9 +273,8 @@ export default function AboutPage() {
               <span>ОСТАВИТЬ ЗАЯВКУ</span>
               <ArrowUpRight className="w-6 h-6 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </a>
-            {/* Updated link to Home */}
             <Link
-              href="/"
+              href="/#services"
               className="group flex items-center justify-between text-xl md:text-2xl font-medium border-b border-[#1A2B45]/50 pb-4 text-[#4A5568] hover:text-[#1A2B45] transition-colors"
             >
               <span>ВЕРНУТЬСЯ НА ГЛАВНУЮ</span>
