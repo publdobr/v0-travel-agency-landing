@@ -1,4 +1,5 @@
 import { ArrowUpRight, ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -81,16 +82,13 @@ export default function Home() {
             </div>
           </div>
 
-          <a 
-            href="https://t.me/vicky_somewhere"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button 
             className="group flex w-full items-center justify-between border-b-2 border-[#1A2B45] py-4 text-left text-lg font-medium uppercase tracking-wide transition-colors hover:border-[#1A2B45]/60 md:text-xl"
             aria-label="Оставить заявку на путешествие"
           >
             ОСТАВИТЬ ЗАЯВКУ
             <ArrowRight className="transition-transform group-hover:translate-x-2" />
-          </a>
+          </button>
         </div>
       </header>
 
@@ -100,61 +98,34 @@ export default function Home() {
           <h2 id="why-us-heading" className="mb-12 text-5xl font-bold md:text-6xl lg:text-7xl">
             ПОЧЕМУ МЫ?
           </h2>
-      
+
           <div className="grid gap-px bg-[#1A2B45]/20 md:grid-cols-2">
-
             <div className="bg-[#EEECE8] p-8 md:p-12">
-
               <p className="mb-4 text-4xl font-bold md:text-5xl">9 ЛЕТ</p>
-
               <p className="text-lg leading-relaxed text-[#1A2B45]/80">
-
                 В экспедиционном<br />и люкс-туризме
-
               </p>
-
             </div>
-
             <div className="bg-[#EEECE8] p-8 md:p-12">
-
               <p className="mb-4 text-4xl font-bold md:text-5xl">1863 ПУТЕШЕСТВЕННИКА</p>
-
               <p className="text-lg leading-relaxed text-[#1A2B45]/80">
-
                 доверили организацию<br />своего отпуска
-
               </p>
-
             </div>
-
             <div className="bg-[#EEECE8] p-8 md:p-12">
-
               <p className="mb-4 text-4xl font-bold md:text-5xl">70 СТРАН МИРА</p>
-
               <p className="text-lg leading-relaxed text-[#1A2B45]/80">мы посетили</p>
-
             </div>
-
             <div className="bg-[#EEECE8] p-8 md:p-12">
-
               <p className="mb-4 text-4xl font-bold md:text-5xl">&gt;3000 ЭКСКУРСИЙ</p>
-
               <p className="text-lg leading-relaxed text-[#1A2B45]/80">Лично провели</p>
-
             </div>
-
           </div>
-
-
 
           <div className="mt-px bg-[#EEECE8] p-8 md:p-12">
-
             <p className="mb-4 text-4xl font-bold md:text-5xl">209 АВТОРСКИХ МАРШРУТОВ</p>
-
             <p className="text-lg leading-relaxed text-[#1A2B45]/80">Создали в 6 странах</p>
-
           </div>
-
         </div>
       </section>
 
@@ -194,6 +165,17 @@ export default function Home() {
               </p>
             </article>
           </div>
+
+          <div className="mt-16 border-t border-white/20 pt-8">
+            <Link
+              href="/about"
+              className="group inline-flex items-center gap-2 text-base font-medium uppercase tracking-wide text-white transition-colors hover:text-white/70 md:text-lg"
+            >
+              Подробнее о нас и о нашем опыте
+              <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
+            </Link>
+          </div>
+          {/* </CHANGE> */}
         </div>
       </section>
 
