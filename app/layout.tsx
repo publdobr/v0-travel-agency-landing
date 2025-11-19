@@ -27,12 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      {/* Устанавливаем bg-[#EEECE8] и центрируем дочерний элемент */}
-      <body className="antialiased bg-[#EEECE8] min-h-screen flex justify-center">
-        {/* Обертка для контента: максимальная ширина 4XL (~900px), центрирование по горизонтали, фон и тень. */}
-        <div className="w-full max-w-4xl bg-[#EEECE8] shadow-xl min-h-screen">
-          {children}
-        </div>
+      <body className="antialiased">
+        {children}
       </body>
     </html>
   );
