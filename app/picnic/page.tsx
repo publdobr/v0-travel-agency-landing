@@ -1,6 +1,3 @@
-Вот переписанный код с использованием нового текста, сохраняющий оригинальный стиль и структуру:
-
-```jsx
 import Link from "next/link"
 import { ArrowUpRight } from 'lucide-react'
 
