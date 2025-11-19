@@ -27,8 +27,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className="antialiased">
-        {children}
+      {/* Добавляем классы flex, min-h-screen и justify-center к body, 
+        чтобы центрировать дочерний контент горизонтально.
+      */}
+      <body className="antialiased flex min-h-screen w-full justify-center">
+        {/* Оборачиваем children в div, который ограничивает ширину (max-w-4xl). 
+          Это создает эффект колонки в центре экрана.
+        */}
+        <div className="w-full max-w-4xl">
+          {children}
+        </div>
       </body>
     </html>
   );
