@@ -1,6 +1,6 @@
 import { ArrowUpRight, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
-// import { NavigationMenu } from '@/components/navigation-menu' // Закомментировано, так как компонент не предоставлен
+// import { NavigationMenu } from '@/components/navigation-menu' 
 
 export default function Home() {
   return (
@@ -9,7 +9,8 @@ export default function Home() {
 
       {/* Hero Section */}
       <header className="relative min-h-screen px-6 py-12 md:px-12 lg:px-24">
-        <div className="mx-auto max-w-4xl">
+        {/* ВОЗВРАЩЕНО: max-w-7xl */}
+        <div className="mx-auto max-w-7xl">
           <p className="mb-8 text-sm uppercase tracking-wider text-[#1A2B45]/60 md:text-base">
             [Гиды и продюсеры путешествий]
           </p>
@@ -97,11 +98,11 @@ export default function Home() {
           </a>
         </div>
       </header>
-      <hr className="my-16 border-[#1A2B45]/10" />
 
       {/* Why Us Section */}
       <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="why-us-heading" id="why-us">
-        <div className="mx-auto max-w-4xl">
+        {/* ВОЗВРАЩЕНО: max-w-7xl */}
+        <div className="mx-auto max-w-7xl">
           <h2 id="why-us-heading" className="mb-12 text-5xl font-bold md:text-6xl lg:text-7xl">
             ПОЧЕМУ МЫ?
           </h2>
@@ -109,7 +110,7 @@ export default function Home() {
             <div className="grid gap-px bg-[#1A2B45]/20 md:grid-cols-2">
             {/* 9 ЛЕТ */}
             <div className="bg-[#EEECE8] p-8 md:p-12">
-                {/* ИЗМЕНЕНО: text-4xl -> text-3xl */}
+                {/* ИЗМЕНЕНО: text-4xl -> text-3xl (для исправления переполнения текста) */}
                 <p className="mb-4 text-3xl font-bold md:text-5xl">9 ЛЕТ</p>
                 <p className="text-lg leading-relaxed text-[#1A2B45]/80">
                     В экспедиционном<br />и люкс-туризме
@@ -118,7 +119,7 @@ export default function Home() {
             
             {/* 1863 ПУТЕШЕСТВЕННИКА */}
             <div className="bg-[#EEECE8] p-8 md:p-12">
-                {/* ИЗМЕНЕНО: text-4xl -> text-3xl */}
+                {/* ИЗМЕНЕНО: text-4xl -> text-3xl (для исправления переполнения текста) */}
                 <p className="mb-4 text-3xl font-bold md:text-5xl">1863 ПУТЕШЕСТВЕННИКА</p>
                 <p className="text-lg leading-relaxed text-[#1A2B45]/80">
                     доверили организацию<br />своего отпуска
@@ -127,14 +128,14 @@ export default function Home() {
             
             {/* 70 СТРАН МИРА */}
             <div className="bg-[#EEECE8] p-8 md:p-12">
-                {/* ИЗМЕНЕНО: text-4xl -> text-3xl */}
+                {/* ИЗМЕНЕНО: text-4xl -> text-3xl (для исправления переполнения текста) */}
                 <p className="mb-4 text-3xl font-bold md:text-5xl">70 СТРАН МИРА</p>
                 <p className="text-lg leading-relaxed text-[#1A2B45]/80">мы посетили</p>
             </div>
             
             {/* >3000 ЭКСКУРСИЙ */}
             <div className="bg-[#EEECE8] p-8 md:p-12">
-                {/* ИЗМЕНЕНО: text-4xl -> text-3xl */}
+                {/* ИЗМЕНЕНО: text-4xl -> text-3xl (для исправления переполнения текста) */}
                 <p className="mb-4 text-3xl font-bold md:text-5xl">&gt;3000 ЭКСКУРСИЙ</p>
                 <p className="text-lg leading-relaxed text-[#1A2B45]/80">Лично провели</p>
             </div>
@@ -142,13 +143,12 @@ export default function Home() {
         
         {/* 209 АВТОРСКИХ МАРШРУТОВ (отдельный блок) */}
         <div className="mt-px bg-[#EEECE8] p-8 md:p-12">
-            {/* ИЗМЕНЕНО: text-4xl -> text-3xl */}
+            {/* ИЗМЕНЕНО: text-4xl -> text-3xl (для исправления переполнения текста) */}
             <p className="mb-4 text-3xl font-bold md:text-5xl">209 АВТОРСКИХ МАРШРУТОВ</p>
             <p className="text-lg leading-relaxed text-[#1A2B45]/80">Создали в 6 странах</p>
         </div>
        
       </section>
-      <hr className="my-16 border-[#1A2B45]/10" />
 
       {/* Who We Are Section */}
       <section 
@@ -163,7 +163,8 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-[#1A2B45]/60"></div>
 
-        <div className="relative mx-auto max-w-4xl">
+        {/* ВОЗВРАЩЕНО: max-w-7xl */}
+        <div className="relative mx-auto max-w-7xl">
           <h2 id="who-we-are-heading" className="mb-12 text-5xl font-bold text-white md:text-6xl lg:text-7xl">
             КТО МЫ?
           </h2>
@@ -199,11 +200,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <hr className="my-16 border-[#1A2B45]/10" />
 
       {/* Target Audience Section */}
       <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="target-audience-heading" id="target-audience">
-        <div className="mx-auto max-w-4xl">
+        {/* ВОЗВРАЩЕНО: max-w-7xl */}
+        <div className="mx-auto max-w-7xl">
           <h2 id="target-audience-heading" className="mb-16 text-5xl font-bold md:text-6xl lg:text-7xl">
             ВАМ К НАМ, ЕСЛИ:
           </h2>
@@ -311,11 +312,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <hr className="my-16 border-[#1A2B45]/10" />
 
       {/* Services Section */}
       <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="services-heading" id="services">
-        <div className="mx-auto max-w-4xl">
+        {/* ВОЗВРАЩЕНО: max-w-7xl */}
+        <div className="mx-auto max-w-7xl">
           <h2 id="services-heading" className="mb-12 text-5xl font-bold md:text-6xl lg:text-7xl">
             НАШИ УСЛУГИ
           </h2>
@@ -432,11 +433,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <hr className="my-16 border-[#1A2B45]/10" />
 
       {/* Media Section */}
       <section className="px-6 py-20 md:px-12 lg:px-24" aria-labelledby="media-heading" id="media">
-        <div className="mx-auto max-w-4xl">
+        {/* ВОЗВРАЩЕНО: max-w-7xl */}
+        <div className="mx-auto max-w-7xl">
           <h2 id="media-heading" className="mb-12 text-5xl font-bold md:text-6xl lg:text-7xl">
             ИНТЕРВЬЮ И ПОДКАСТЫ
           </h2>
@@ -445,4 +446,148 @@ export default function Home() {
             <ul className="space-y-6">
               <li>
                 <a href="https://www.youtube.com/@bogatieTravel" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
-                  <span className="text
+                  <span className="text-lg md:text-xl">СМОТРЕТЬ НАШ ЮТУБ-КАНАЛ</span>
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="https://seeyou.mave.digital/ep-25" target="_blank" rel="noopener noreferrer" className="group block border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <div className="flex items-center justify-between">
+                    <div className="flex-1">
+                      <div className="text-lg md:text-xl mb-2">ПОДКАСТ «ВАЖНОЕ РЕШЕНИЕ»</div>
+                      <p className="text-base text-[#1A2B45]/60">О Патагонии и путешествиях со смыслом через новый опыт</p>
+                    </div>
+                    <ArrowUpRight className="ml-4 flex-shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://stationnord.mave.digital/ep-48" target="_blank" rel="noopener noreferrer" className="group block border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <div className="flex items-center justify-between">
+                    <div className="flex-1">
+                      <div className="text-lg md:text-xl mb-2">«СЕВЕР»</div>
+                      <p className="text-base text-[#1A2B45]/60">Про Шпицберген, арктическую болезнь, нашу с Ваней биполярочку и переезд из Арктики в Антарктику</p>
+                    </div>
+                    <ArrowUpRight className="ml-4 flex-shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://smogla.mave.digital/ep-3" target="_blank" rel="noopener noreferrer" className="group block border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <div className="flex items-center justify-between">
+                    <div className="flex-1">
+                      <div className="text-lg md:text-xl mb-2">ПОДКАСТ «Я СМОГЛА И ТЫ СМОЖЕШЬ»</div>
+                      <p className="text-base text-[#1A2B45]/60">Каково женщине вести бизнес на Кавказе, жизнь в Арктике, экспедицию в Антарктиду, и почему я больше не хочу путешествовать</p>
+                    </div>
+                    <ArrowUpRight className="ml-4 flex-shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=TL26d4MOoCI" target="_blank" rel="noopener noreferrer" className="group block border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <div className="flex items-center justify-between">
+                    <div className="flex-1">
+                      <div className="text-lg md:text-xl mb-2">ЗАЧЕМ ЖИТЬ НА КРАЮ СВЕТА?</div>
+                      <p className="text-base text-[#1A2B45]/60">Интервью Scandinavia Club про Арктику</p>
+                    </div>
+                    <ArrowUpRight className="ml-4 flex-shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://t-j.ru/gedonistan/" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <span className="text-lg md:text-xl">Т-Ж ПРО ТУРБЮРО В ДАГЕСТАНЕ</span>
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="https://n-e-n.ru/avtodom/" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <span className="text-lg md:text-xl">ИНТЕРВЬЮ ПРО СЕМЕЙНОЕ ПУТЕШЕСТВИЕ В АВТОДОМЕ ПО АРГЕНТИНЕ</span>
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=u4f0-rpAbFI&t=2871s" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <span className="text-lg md:text-xl">ВЫПУСК «РЕДАКЦИИ» ПРО ДАГЕСТАН</span>
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=igJhxx7cSOY" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-[#1A2B45]/20 py-4 transition-colors hover:border-[#1A2B45]">
+                  <span className="text-lg md:text-xl">ВЫСТУПЛЕНИЕ В СПОРТМАРАФОНЕ</span>
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={24} />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      {/* Contact Footer */}
+      <footer 
+        style={{
+          backgroundImage: 'url(/couple-of-travelers-standing-together-in-patagonia.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+        className="relative px-6 py-24 md:px-12 lg:px-24" 
+        aria-labelledby="contact-heading"
+        id="contact"
+      >
+        <div className="absolute inset-0 bg-[#1A2B45]/60"></div>
+
+        {/* ВОЗВРАЩЕНО: max-w-7xl */}
+        <div className="relative mx-auto max-w-7xl">
+          <h2 id="contact-heading" className="mb-12 text-5xl font-bold text-white md:text-6xl lg:text-7xl">
+            НА СВЯЗИ!
+          </h2>
+
+          <p className="mb-12 max-w-2xl text-lg leading-relaxed text-white md:text-xl text-pretty">
+            Напишите нам в любую удобную соц. сеть и мы подберем для вас лучшие условия для путешествия!
+          </p>
+
+          <nav aria-label="Социальные сети">
+            <ul className="flex flex-wrap gap-6">
+              <li>
+                <a 
+                  href="https://t.me/vicky_somewhere"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-2 text-lg font-medium text-white transition-colors hover:text-white/70"
+                  aria-label="Написать в Telegram"
+                >
+                  Telegram
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.instagram.com/vicky_somewhere/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-2 text-lg font-medium text-white transition-colors hover:text-white/70"
+                  aria-label="Написать в Instagram"
+                >
+                  Instagram
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://api.whatsapp.com/send/?phone=5491126441804&text&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-2 text-lg font-medium text-white transition-colors hover:text-white/70"
+                  aria-label="Написать в WhatsApp"
+                >
+                  WhatsApp
+                  <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" size={20} />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </main>
+  )
+}
