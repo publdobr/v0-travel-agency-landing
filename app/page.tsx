@@ -146,7 +146,7 @@ export default function Home() {
             <p className="mb-4 text-3xl font-bold md:text-5xl">209 АВТОРСКИХ МАРШРУТОВ</p>
             <p className="text-lg leading-relaxed text-[#1A2B45]/80">Создали в 6 странах</p>
         </div>
-        {/* </CHANGE> */}
+       
       </section>
 
       {/* Who We Are Section */}
