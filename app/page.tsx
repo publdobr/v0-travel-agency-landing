@@ -106,33 +106,45 @@ export default function Home() {
             ПОЧЕМУ МЫ?
           </h2>
 
-          <div className="grid gap-px bg-[#1A2B45]/20 md:grid-cols-2">
+            <div className="grid gap-px bg-[#1A2B45]/20 md:grid-cols-2">
+            {/* 9 ЛЕТ */}
             <div className="bg-[#EEECE8] p-8 md:p-12">
-              <p className="mb-4 text-4xl font-bold md:text-5xl">9 ЛЕТ</p>
-              <p className="text-lg leading-relaxed text-[#1A2B45]/80">
-                В экспедиционном<br />и люкс-туризме
-              </p>
+                {/* ИЗМЕНЕНО: text-4xl -> text-3xl */}
+                <p className="mb-4 text-3xl font-bold md:text-5xl">9 ЛЕТ</p>
+                <p className="text-lg leading-relaxed text-[#1A2B45]/80">
+                    В экспедиционном<br />и люкс-туризме
+                </p>
             </div>
+            
+            {/* 1863 ПУТЕШЕСТВЕННИКА */}
             <div className="bg-[#EEECE8] p-8 md:p-12">
-              <p className="mb-4 text-4xl font-bold md:text-5xl">1863 ПУТЕШЕСТВЕННИКА</p>
-              <p className="text-lg leading-relaxed text-[#1A2B45]/80">
-                доверили организацию<br />своего отпуска
-              </p>
+                {/* ИЗМЕНЕНО: text-4xl -> text-3xl */}
+                <p className="mb-4 text-3xl font-bold md:text-5xl">1863 ПУТЕШЕСТВЕННИКА</p>
+                <p className="text-lg leading-relaxed text-[#1A2B45]/80">
+                    доверили организацию<br />своего отпуска
+                </p>
             </div>
+            
+            {/* 70 СТРАН МИРА */}
             <div className="bg-[#EEECE8] p-8 md:p-12">
-              <p className="mb-4 text-4xl font-bold md:text-5xl">70 СТРАН МИРА</p>
-              <p className="text-lg leading-relaxed text-[#1A2B45]/80">мы посетили</p>
+                {/* ИЗМЕНЕНО: text-4xl -> text-3xl */}
+                <p className="mb-4 text-3xl font-bold md:text-5xl">70 СТРАН МИРА</p>
+                <p className="text-lg leading-relaxed text-[#1A2B45]/80">мы посетили</p>
             </div>
+            
+            {/* >3000 ЭКСКУРСИЙ */}
             <div className="bg-[#EEECE8] p-8 md:p-12">
-              <p className="mb-4 text-4xl font-bold md:text-5xl">&gt;3000 ЭКСКУРСИЙ</p>
-              <p className="text-lg leading-relaxed text-[#1A2B45]/80">Лично провели</p>
+                {/* ИЗМЕНЕНО: text-4xl -> text-3xl */}
+                <p className="mb-4 text-3xl font-bold md:text-5xl">&gt;3000 ЭКСКУРСИЙ</p>
+                <p className="text-lg leading-relaxed text-[#1A2B45]/80">Лично провели</p>
             </div>
-          </div>
-
-          <div className="mt-px bg-[#EEECE8] p-8 md:p-12">
-            <p className="mb-4 text-4xl font-bold md:text-5xl">209 АВТОРСКИХ МАРШРУТОВ</p>
+        </div>
+        
+        {/* 209 АВТОРСКИХ МАРШРУТОВ (отдельный блок) */}
+        <div className="mt-px bg-[#EEECE8] p-8 md:p-12">
+            {/* ИЗМЕНЕНО: text-4xl -> text-3xl */}
+            <p className="mb-4 text-3xl font-bold md:text-5xl">209 АВТОРСКИХ МАРШРУТОВ</p>
             <p className="text-lg leading-relaxed text-[#1A2B45]/80">Создали в 6 странах</p>
-          </div>
         </div>
         {/* </CHANGE> */}
       </section>
