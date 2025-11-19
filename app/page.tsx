@@ -101,49 +101,60 @@ export default function Home() {
             ПОЧЕМУ МЫ?
           </h2>
       
-          {/* Блок со статистикой, адаптированный под скриншот */}
-          <div className="mx-auto max-w-4xl bg-white">
-            
-            {/* Основная сетка 2x2 */}
-            <div className="grid border-b border-[#B3B3B3] md:grid-cols-2">
-              
-              {/* 9 ЛЕТ (Верхний левый блок) */}
-              <div className="border-r border-[#B3B3B3] p-6 text-center md:p-10">
-                <p className="mb-2 text-4xl font-bold text-[#353D4A] md:text-5xl">9 ЛЕТ</p>
-                <p className="text-base leading-snug text-[#353D4A] md:text-lg">
-                  в экспедиционном<br />и люкс-туризме
-                </p>
-              </div>
-      
-              {/* 1863 ПУТЕШЕСТВЕННИКА (Верхний правый блок) */}
-              <div className="p-6 text-center md:p-10">
-                <p className="mb-2 text-4xl font-bold text-[#353D4A] md:text-5xl">1863 ПУТЕШЕСТВЕННИКА</p>
-                <p className="text-base leading-snug text-[#353D4A] md:text-lg">
-                  доверили организацию<br />своего отпуска
-                </p>
-              </div>
-              
-              {/* 70 СТРАН МИРА (Нижний левый блок) */}
-              <div className="border-t border-r border-[#B3B3B3] p-6 text-center md:p-10">
-                <p className="mb-2 text-4xl font-bold text-[#353D4A] md:text-5xl">70 СТРАН МИРА</p>
-                <p className="text-base leading-snug text-[#353D4A] md:text-lg">мы посетили</p>
-              </div>
-      
-              {/* >3000 ЭКСКУРСИЙ (Нижний правый блок) */}
-              <div className="border-t border-[#B3B3B3] p-6 text-center md:p-10">
-                <p className="mb-2 text-4xl font-bold text-[#353D4A] md:text-5xl">&gt;3000 ЭКСКУРСИЙ</p>
-                <p className="text-base leading-snug text-[#353D4A] md:text-lg">Лично провели</p>
-              </div>
-              
+          <div className="grid gap-px bg-[#1A2B45]/20 md:grid-cols-2">
+
+            <div className="bg-[#EEECE8] p-8 md:p-12">
+
+              <p className="mb-4 text-4xl font-bold md:text-5xl">9 ЛЕТ</p>
+
+              <p className="text-lg leading-relaxed text-[#1A2B45]/80">
+
+                В экспедиционном<br />и люкс-туризме
+
+              </p>
+
             </div>
-            
-            {/* 209 АВТОРСКИХ МАРШРУТОВ (Нижняя секция) */}
-            <div className="p-6 text-center md:p-10">
-              <p className="mb-2 text-4xl font-normal text-[#808080] md:text-5xl">209 АВТОРСКИХ МАРШРУТОВ</p>
-              <p className="text-base leading-snug text-[#808080] md:text-lg">Создали в 6 странах</p>
+
+            <div className="bg-[#EEECE8] p-8 md:p-12">
+
+              <p className="mb-4 text-4xl font-bold md:text-5xl">1863 ПУТЕШЕСТВЕННИКА</p>
+
+              <p className="text-lg leading-relaxed text-[#1A2B45]/80">
+
+                доверили организацию<br />своего отпуска
+
+              </p>
+
             </div>
-      
+
+            <div className="bg-[#EEECE8] p-8 md:p-12">
+
+              <p className="mb-4 text-4xl font-bold md:text-5xl">70 СТРАН МИРА</p>
+
+              <p className="text-lg leading-relaxed text-[#1A2B45]/80">мы посетили</p>
+
+            </div>
+
+            <div className="bg-[#EEECE8] p-8 md:p-12">
+
+              <p className="mb-4 text-4xl font-bold md:text-5xl">&gt;3000 ЭКСКУРСИЙ</p>
+
+              <p className="text-lg leading-relaxed text-[#1A2B45]/80">Лично провели</p>
+
+            </div>
+
           </div>
+
+
+
+          <div className="mt-px bg-[#EEECE8] p-8 md:p-12">
+
+            <p className="mb-4 text-4xl font-bold md:text-5xl">209 АВТОРСКИХ МАРШРУТОВ</p>
+
+            <p className="text-lg leading-relaxed text-[#1A2B45]/80">Создали в 6 странах</p>
+
+          </div>
+
         </div>
       </section>
 
